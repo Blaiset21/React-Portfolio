@@ -3,25 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <header id="header">
-        <div className="header-container">
-          <nav className="header-nav">
-            <ul>
-              <li id="name"><h1>Blaise Tyree</h1></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Navbar />
       <section id="center">
         <div className="hero">
         </div>
