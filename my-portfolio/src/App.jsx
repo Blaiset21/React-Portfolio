@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,22 +11,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <section id="center">
-        <div className="hero">
-        </div>
-        <div>
-          <h1>Junior Developer</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <Hero />
+
 
       <div className="ticks"></div>
 
